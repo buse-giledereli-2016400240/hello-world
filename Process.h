@@ -1,17 +1,14 @@
 #ifndef PROCESS_H
 #define PROCESS_H
 
-#endif //PROCESS_H
-
 #include <iostream>
 #include <vector>
 
+
 class Process {
 public:
-
-	vector<int> execTimes;
 	
-	string name;
+	std::string name;
 
 	int priority;
 
@@ -19,13 +16,17 @@ public:
 
 	int arrTime;
 
+    int lastInstNo;
+
 	int turnaroundTime;
 
-	int waitTime;
+	int cpuTime;
+
+	int nextInst;
 
 	Process();
 
-	Process(string name_, int priority_, string codeName_, int arrTime_);
+	Process(std::string name_, int priority_, int codeNo_, int arrTime_, int lastInstNo_);
 
 	Process(const Process &other);
 
@@ -34,3 +35,5 @@ public:
 	~Process();
 
 };
+
+#endif //PROCESS_H
