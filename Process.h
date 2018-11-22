@@ -15,7 +15,7 @@ public:
 
 	int priority;
 
-	string codeName;
+	int codeNo;
 
 	int arrTime;
 
