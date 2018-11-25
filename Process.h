@@ -8,21 +8,21 @@
 class Process {
 public:
 	
-	std::string name;
+	std::string name; //holds the name of the process for printing
 
-	int priority;
+	int priority; //holds the priority of the process to sort in ready queue
 
-	int codeNo;
+	int codeNo; //holds the actual code name(just the number) this process has
 
-	int arrTime;
+	int arrTime; //holds the arrival time of the process
 
-    int lastInstNo;
+    int lastInstNo; //holds the last instruction number(+1) of the process
 
-	int turnaroundTime;
+	int turnaroundTime; //holds the turnaround time for stats
 
-	int cpuTime;
+	int cpuTime; //holds the cpu time for stats
 
-	int nextInst;
+	int nextInst; //holds the next instruction to be executed
 
 	Process();
 
